@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 10px;
 }
+.form-control {
+  background-color: #F0F0F0;
+}
 .header {
   display: flex;
   justify-content: space-between;
