@@ -39,7 +39,7 @@ navigateToPost = postThread => {
 deleteIconsArray.map(deleteIcon => {
   deleteIcon.addEventListener("click", e =>
     openDeletePostModal(deletePostModal, e.target)
-  );
+    );
 });
 dotsArray.map(dot => {
   dot.addEventListener("click", e => navigateToPost(e.target));
