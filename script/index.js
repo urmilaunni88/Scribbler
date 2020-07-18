@@ -10,7 +10,7 @@ createPostBtn.addEventListener("click", () => openModal(createPostModal));
 closeCreatePost.addEventListener("click", () => closeModal(createPostModal));
 
 window.addEventListener("click", function(event) {
-  if (event.target == createPostModal) {
-    createPostModal.style.display = "none";
-  }
+	if (event.target == createPostModal) {
+		createPostModal.style.display = "none";
+	}
 });
