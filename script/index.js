@@ -1,21 +1,16 @@
+var createPostModal = document.getElementById("createPostModal");
 
-function showSignInModal(){
-  var modal = document.getElementById("signin-modal");
-  modal.style.display = "flex";
-}
+// Get the button that opens the modal
+var createPostBtn = document.getElementById("createPostBtn");
 
-function hideSignInModal(){
-  var modal = document.getElementById("signin-modal");
-  modal.style.display = "none";
-}
+// Get the <span> element that closes the modal
+var closeCreatePost = document.getElementById("closeCreatePost");
 
-function showSignUpModal(){
-  var modal = document.getElementById("signup-modal");
-  modal.style.display = "flex";
-}
+createPostBtn.addEventListener("click", () => openModal(createPostModal));
+closeCreatePost.addEventListener("click", () => closeModal(createPostModal));
 
-function hideSignUpModal(){
-  var modal = document.getElementById("signup-modal");
-  modal.style.display = "none";
-}
-
+window.addEventListener("click", function(event) {
+  if (event.target == createPostModal) {
+    createPostModal.style.display = "none";
+  }
+});
